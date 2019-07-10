@@ -5,6 +5,7 @@ A Linguagem R é constantemente utilizada para gerar e analisar dados com precis
 Neste projeto, é explorado o potencial de obtenção de dados. O objetivo é, obter imagens, textos e links de referência relacionados a uma determinada entrada. Para isso, foram utilizadas 2 APIs, e criadas 5 funções que serão apresentadas abaixo.
 
 Bibliotecas utilizadas:
+
 library("rjson")
 library("httr")
 library("filesstrings")
@@ -32,6 +33,7 @@ getHtmlText
 Recebe como parâmetro o caminho do arquivo com os links que foram obtidos em "getWikiLinks". Obtém o xml da página e em seguida obtém os textos dos parágrafos localizados no 'css selector' que foi obtido manualmente na página do wikipedia. São analisados 20 parágrafos, e obtidos aqueles que contém textos. Os textos obtidos em html são extraídos e escritos em um arquivo de texto em './"q"', .O nome deste arquivo é retornado.
 
 Finish
+
 Uma função auxiliar responsável por mover, renomear, e excluir arquivos de debug.
 Aqui, o arquivo de texto obtido em "getWikiLinks" é renomeado para 'wikilinks.txt'. Movido para './"q"/textos juntamente com o arquivo contendo os textos que foi obtido em 'getHtmlText'.
 
