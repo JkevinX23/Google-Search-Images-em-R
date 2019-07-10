@@ -5,7 +5,7 @@ library('rvest')
 library("RCurl")
 
 getImages <- function(num,q){
-  credentials<- fromJSON(file = "../credentials/google-search.json")
+  credentials<- fromJSON(file = "/credentials/google-search.json")
   key <- credentials["apiKey"]
   cx <- credentials ["searchEngineId"]
   cs1<- "https://www.googleapis.com/customsearch/v1?key="
